@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/components/cart/cart.css" />
     <link rel="stylesheet" href="components/header/header.css" />
     <link rel="stylesheet" href="components/slider/slider.css" />
+    <link rel="stylesheet" href="components/categories/categories.css" />
+    <link rel="stylesheet" href="components/categories/manufacturing/manufacturing.css" />
   </head>
   <body>
     <header id="header" class="header"></header>
@@ -56,6 +58,7 @@
             document.getElementById("categories-container").innerHTML = data;
           })
           .catch((error) => console.error("Error loading header:", error));
+
       });
     </script>
     <script src="js/header.js"></script>

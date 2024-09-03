@@ -1,0 +1,91 @@
+.categoties {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 65px;
+
+}
+
+.categoties-name {}
+
+.categoty {
+	position: relative;
+	width: 388px;
+	height: 500px;
+	background-position-x: 5px;
+	background-image: url(../../image/category/Subtract.png);
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.categoty-name {
+	font-family: Euclid Circular A;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 35.5px;
+	text-align: left;
+	color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.categoty-manufacturing {
+	position: absolute;
+	top: 228.01px;
+	left: 24.2px;
+}
+
+.categoty-button {
+	background-color: rgba(235, 227, 255, 0.19);
+	border-radius: 50%;
+	border: solid 2px rgba(217, 255, 90, 1);
+	position: absolute;
+	width: 101px;
+	height: 101px;
+	top: 416px;
+	left: 149px;
+	gap: 0px;
+	opacity: 0px;
+	background-image: url(../../image/category/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.categoty-button:hover {
+	background-color: rgba(217, 255, 90, 1);
+	background-image: url(../../image/category/arrow-on.png);
+}
+
+.categoty-button-image {}
+
+.categoty-button-quantity {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 81px;
+	height: 72px;
+	border-radius: 50%;
+	top: 148.37px;
+	left: 345.74px;
+	transform: rotate(-23deg);
+	position: absolute;
+	background-color: #FA8FEF;
+	font-family: Floreste;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 38px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: #ffffff;
+}
+
+.categoty-button-quantity span {
+	font-family: Euclid Circular A;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 19.02px;
+	text-align: center;
+}
