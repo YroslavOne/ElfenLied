@@ -1,0 +1,67 @@
+.header-conteiner {
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 133px;
+  padding: 0;
+}
+.nav div a {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.nav .nav-first a:nth-child(2) {
+  margin-left: 387px;
+}
+.nav .nav-first a:nth-child(3) {
+  margin-left: 30px;
+}
+.logo {
+    font-family: Le Murmure;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50.45px;
+    text-align: left;    
+}
+.menu-catalog-img {
+  margin-right: 12px;
+}
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 386px;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: Euclid Circular A;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.82px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.menu-button img {
+  margin-right: 12px;
+}
+.nav-second {
+  margin-left: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.menu-catalog-img-for-user {
+  margin: 0;
+  margin-left: 36px;
+  padding: 0;
+}

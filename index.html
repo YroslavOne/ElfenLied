@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/components/cart/cart.css" />
+    <link rel="stylesheet" href="components/header/header.css" />
+    <link rel="stylesheet" href="components/slider/slider.css" />
+  </head>
+  <body>
+    <header id="header" class="header"></header>
+
+    <main class="main-content">
+      <div id="slider-container"></div>
+      <div id="categories-container"></div>
+    </main>
+    <div id="cart-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/components/slider/slider.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("slider-container").innerHTML = data;
+
+            const sliderScript = document.createElement("script");
+            sliderScript.src = "/components/slider/slider.js";
+            sliderScript.onload = () => console.log("Slider script loaded");
+            document.body.appendChild(sliderScript);
+          })
+          .catch((error) => console.error("Error loading slider:", error));
+
+        fetch("/components/cart/cart.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("cart-container").innerHTML = data;
+            const modalScript = document.createElement("script");
+            modalScript.src = "/components/cart/cart.js";
+            document.body.appendChild(modalScript);
+          })
+          .catch((error) => console.error("Error loading modal:", error));
+
+        fetch("/components/header/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading header:", error));
+
+          fetch("/components/categories/categories.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("categories-container").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading header:", error));
+      });
+    </script>
+    <script src="js/header.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

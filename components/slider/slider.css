@@ -1,0 +1,225 @@
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1038px;
+  margin-top: -103px;
+}
+.slider-conteiner-text-background {
+  position: absolute;
+  font-family: "Floreste", regular;
+  font-size: 212px;
+  font-weight: 400;
+  line-height: 201.4px;
+  text-align: center;
+  color: #cbb6ff99;
+  left: 60px;
+  top: 305px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+
+.slide {
+  height: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide.open {
+  width: 1120px;
+  position: relative;
+  height: 100%;
+  flex: 3;
+  background-color: none;
+  margin: 0 20px;
+  text-align: left;
+}
+.slide.open .slider-container-number {
+  display: none;
+}
+
+.slide.open .slider-container-utp {
+  display: block;
+  position: absolute;
+  top: 251px;
+  left: 40px;
+  color: #d9ff5a;
+}
+.slider-container-detail {
+  display: flex;
+  margin-top: -79px;
+  width: 1040px;
+  justify-content: space-between;
+}
+.slider-container-information {
+  width: 312px;
+  left: 40px;
+  bottom: 62px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider-container-name {
+  font-family: Euclid Circular A;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.5px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+}
+.slider-container-description {
+  font-family: Euclid Circular A;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.82px;
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 18px;
+}
+.slider-container-price {
+  font-family: Floreste;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #d9ff5a;
+  margin: 0;
+  margin-top: 54px;
+}
+.slider-container-price span {
+  font-family: Euclid Circular A;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.36px;
+  text-align: left;
+  color: #d9ff5a;
+}
+
+.slider-container-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container-elipce-first {
+  top: 0px;
+  left: 0px;
+  border: 2px solid #d9ff5a;
+  width: 365px;
+  height: 135px;
+  border-radius: 50%;
+  transform: rotate(-2deg);
+}
+.slider-container-elipce-second {
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.19);
+  transform: rotate(-11deg);
+  border: 2px solid #d9ff5a;
+  width: 365px;
+  height: 135px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container-bye-button-image {
+  margin-top: 2px;
+  margin-right: 11px;
+}
+
+.slider-container-bye-button {
+  font-family: Euclid Circular A;
+  transform: rotate(13deg);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+.slide.closed .slider-container-detail {
+  display: none;
+}
+.slide.closed .slider-container-utp {
+  display: none;
+}
+.slide.closed {
+  width: 340px;
+  flex: 1;
+  background-color: var(--slide-color);
+  text-align: center;
+  border-radius: 50px;
+}
+.slide.closed .slider-container-number {
+  position: absolute;
+  bottom: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Euclid Circular A;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.02px;
+  text-align: center;
+}
+
+.slide.closed .slider-container-number span {
+  margin-top: 42px;
+font-family: Floreste;
+font-size: 40px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0.04em;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+
+
+}
+.slide .slider-conteiner-image {
+  margin-top: 150px;
+  width: auto;
+  height: auto;
+}
+.closed .slider-conteiner-image {
+  transition: all 0.5s ease;
+  max-height: 376px;
+}
+.open .slider-conteiner-image {
+}
+
+.slide-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.slide-price {
+  font-size: 1.2rem;
+  color: #8e44ad;
+}
+button {
+  background-color: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}

@@ -1,0 +1,50 @@
+<div class="header-conteiner">
+  <div class="logo">Elfen lied</div>
+  <nav class="nav">
+    <div class="nav-first">
+      <a href="#">
+        <img
+          src="../../image/menu/catalog.png"
+          class="menu-catalog-img"
+          alt=""
+        />Каталог</a
+      >
+      <a href="#">Блог</a>
+      <a href="#">Контакты</a>
+    </div>
+    <button class="menu-button">
+      <img src="../../image/menu/search.png" alt="" /> Поиск
+    </button>
+    <div class="nav-second">
+      <a href="#">
+        <img
+          src="../../image/menu/favorites.png"
+          class="menu-catalog-img-for-user"
+          alt=""
+      /></a>
+      <a href="#">
+        <img
+          id="cart-click"
+          src="../../image/menu/cart.png"
+          class="menu-catalog-img-for-user"
+          alt=""
+      /></a>
+      <a href="#">
+        <img
+          src="../../image/menu/profile.png"
+          class="menu-catalog-img-for-user"
+          alt=""
+      /></a>
+    </div>
+  </nav>
+</div>
+<script>
+  fetch("/components/modal.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("modal-container").innerHTML = data;
+      script.src = "/js/modal.js";
+      document.body.appendChild(script);
+    })
+    .catch((error) => console.error("Error loading modal:", error));
+</script>

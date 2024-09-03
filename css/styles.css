@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Le Murmure";
+  src: url("../fonts/Le-Murmure/Le_Murmure-Regular_web.ttf") format("woff2"),
+    url("../fonts/Le-Murmure/Le_Murmure-Regular_web.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/Euclid-Circular-A/Euclid\ Circular\ A\ Regular.ttf")
+      format("woff2"),
+    url("../fonts/Euclid-Circular-A/Euclid\ Circular\ A\ Regular.ttf")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Floreste";
+  src: url("../fonts/Floreste/FloresteWavy.otf") format("woff2"),
+    url("../fonts/Floreste/FloresteWavy.otf") format("woff");
+  font-weight: normal;
+  font-style: regular;
+}
+
+body {
+  font-family: Euclid Circular A;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.82px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background-color: #ae97e8;
+  color: #333;
+}
+
+.main-content {
+  padding: 20px;
+  z-index: -100;
+}
+.slider-container {
+  z-index: -1;
+}
+
+.footer {
+  background-color: #4c2ea6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.header {
+  /* width: 1736.49px; */
+  z-index: 100;
+  margin-left: 60px;
+  margin-top: 53px;
+  display: flex;
+  color: white;
+}
