@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="components/header/header.css" />
     <link rel="stylesheet" href="components/slider/slider.css" />
     <link rel="stylesheet" href="components/categories/categories.css" />
-    <link rel="stylesheet" href="components/categories/manufacturing/manufacturing.css" />
+    <link
+      rel="stylesheet"
+      href="components/categories/manufacturing/manufacturing.css"
+    />
   </head>
   <body>
     <header id="header" class="header"></header>
@@ -56,9 +59,11 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("categories-container").innerHTML = data;
+            const categoriesScript = document.createElement("script");
+            categoriesScript.src = "/components/categories/items.js";
+            document.body.appendChild(categoriesScript);
           })
-          .catch((error) => console.error("Error loading header:", error));
-
+          .catch((error) => console.error("Error loading categories:", error));
       });
     </script>
     <script src="js/header.js"></script>

@@ -1,36 +1,90 @@
-  <h2 class="categoties-name">Категории</h2>
+<h2 class="categoties-name">Категории</h2>
 
-<div class="categoties">
+<div class="categoties" id="categoties">
   <div class="categoty">
-    <img src="../../image/category/categories/Frame 1321314736.png" alt="">
+    <img src="../../image/category/categories/Frame 1321314736.png" alt="" />
 
-    <p class="categoty-name">напольные <br>зеркала</p>
-    <img src="../../image/category/надпись.svg" alt="" class="categoty-manufacturing">
-    <button class="categoty-button"></button>
+    <p class="categoty-name">напольные <br />зеркала</p>
+    <img
+      src="../../image/category/надпись.svg"
+      alt=""
+      class="categoty-manufacturing"
+    />
+    <button class="categoty-button" data-type="Зеркало напольно"></button>
     <div class="categoty-button-quantity">4 <span>шт</span></div>
   </div>
-	<div class="categoty">
-    <img src="../../image/category/categories/зеркало.png" alt="">
+  <div class="categoty">
+    <img src="../../image/category/categories/зеркало.png" alt="" />
 
-    <p class="categoty-name">торшеры<br>и лампы</p>
-    <img src="../../image/category/надпись.svg" alt="" class="categoty-manufacturing">
-    <button class="categoty-button"></button>
+    <p class="categoty-name">торшеры<br />и лампы</p>
+    <img
+      src="../../image/category/надпись.svg"
+      alt=""
+      class="categoty-manufacturing"
+    />
+    <button class="categoty-button" data-type="Лампа настольная"></button>
     <div class="categoty-button-quantity">4 <span>шт</span></div>
   </div>
-	<div class="categoty">
-    <img src="../../image/category/categories/sophisticated-unusual-modern-high-chair-wave-form 2.png" alt="">
+  <div class="categoty">
+    <img
+      src="../../image/category/categories/sophisticated-unusual-modern-high-chair-wave-form 2.png"
+      alt=""
+    />
 
-    <p class="categoty-name">кресла <br>и стулья</p>
-    <img src="../../image/category/надпись.svg" alt="" class="categoty-manufacturing">
-    <button class="categoty-button"></button>
+    <p class="categoty-name">кресла <br />и стулья</p>
+    <img
+      src="../../image/category/надпись.svg"
+      alt=""
+      class="categoty-manufacturing"
+    />
+    <button class="categoty-button" data-type="Кресла и стулья"></button>
     <div class="categoty-button-quantity">4 <span>шт</span></div>
   </div>
-	<div class="categoty">
-    <img src="../../image/category/categories/Frame 1321314772.png" alt="">
+  <div class="categoty">
+    <img src="../../image/category/categories/Frame 1321314772.png" alt="" />
 
-    <p class="categoty-name">столы <br>и тумбы</p>
-    <img src="../../image/category/надпись.svg" alt="" class="categoty-manufacturing">
-    <button class="categoty-button"></button>
+    <p class="categoty-name">столы <br />и тумбы</p>
+    <img
+      src="../../image/category/надпись.svg"
+      alt=""
+      class="categoty-manufacturing"
+    />
+    <button class="categoty-button" data-type="Столы и тумбы"></button>
     <div class="categoty-button-quantity">4 <span>шт</span></div>
+  </div>
+</div>
+<div id="items-container" class="items-container display-none">
+  <div id="filter" class="filter">
+    <img src="../../image/category/filter.png" alt="" />
+    <p>фильтры</p>
+    <div class="filter-price">
+      <h3 class="filter-price-title">Цена</h3>
+      <div class="filter-price-inputs">
+        <input type="text" id="min-price" class="filter-price-input" value="" placeholder="от 10 000" readonly>
+        <input type="text" id="max-price" class="filter-price-input" value="" placeholder="до 521 000" readonly>
+      </div>
+      <div class="filter-slider-container">
+        <input type="range" id="range-min" min="1" max="1000000" step="1000" value="67000" class="filter-range-slider">
+        <input type="range" id="range-max" min="1" max="1000000" step="1000" value="521000" class="filter-range-slider">
+        <div class="filter-slider-track"></div>
+        <div id="min-value" class="filter-slider-value">67 000</div>
+    <div id="max-value" class="filter-slider-value">521 000</div>
+      </div>
+    </div>
+    <div class="filter-color">
+      <h3 class="filter-color-title">Цвета</h3>
+      <ul>
+        <li>Зеленый <span>(580)</span></li>
+      </ul>
+
+    </div>
+  </div>
+  <div id="items" class="items"></div>
+  <div id="load-more" class="load-more">
+    <div class="load-more-elipce"></div>
+    <button  class="load-more-button">
+      Загрузить еще
+      <img src="../../image/category/arrow-down.png" alt="" />
+    </button>
   </div>
 </div>
