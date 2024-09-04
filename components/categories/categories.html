@@ -55,8 +55,11 @@
 </div>
 <div id="items-container" class="items-container display-none">
   <div id="filter" class="filter">
+		<div id="filter-button" class="filter-button">
     <img src="../../image/category/filter.png" alt="" />
     <p>фильтры</p>
+		</div>
+		<div id="filter-options" class="filter-options display-none">
     <div class="filter-price">
       <h3 class="filter-price-title">Цена</h3>
       <div class="filter-price-inputs">
@@ -73,12 +76,24 @@
     </div>
     <div class="filter-color">
       <h3 class="filter-color-title">Цвета</h3>
-      <ul>
-        <li>Зеленый <span>(580)</span></li>
-      </ul>
+			<div class="filter-color-checkboxes">
+				<input type="checkbox" class="filter-color-checkbox" id="green" name="green" />
+    <label for="green">Зеленый <span>(580)</span></label>
+		<input type="checkbox" class="filter-color-checkbox" id="blue" name="blue" />
+    <label for="blue">Синий <span>(1296)</span></label>
+        <input type="checkbox" class="filter-color-checkbox" id="orange" name="orange" />
+    <label for="orange">Оранжевый <span>(2340)</span></label>
+         <input type="checkbox" class="filter-color-checkbox" id="pink" name="pink" />
+    <label for="pink">Розовый <span>(656)</span></label>
+        <input type="checkbox" class="filter-color-checkbox" id="lavand" name="lavand" />
+    <label for="lavand">Лавандовый <span>(1)</span></label>
+		<input type="checkbox" class="filter-color-checkbox" id="wblue" name="wblue" />
+    <label for="wblue">Голубой <span>(113)</span></label>
+		</div>
 
     </div>
   </div>
+	</div>
   <div id="items" class="items"></div>
   <div id="load-more" class="load-more">
     <div class="load-more-elipce"></div>

@@ -322,4 +322,12 @@ maxSlider.addEventListener("input", updateSlider);
 minPriceInput.addEventListener("input", updateInput);
 maxPriceInput.addEventListener("input", updateInput);
 
+document.getElementById("filter").addEventListener("click", () => {
+    const filter = document.getElementById("filter-options");
+    if (filter.classList.contains("display-none")) {
+      filter.classList.remove("display-none");
+    }
+  }
+);
+
 updateSlider();
